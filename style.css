@@ -1,0 +1,347 @@
+*{
+    font-family: 'Montserrat', sans-serif;
+    /* font-family: 'Roboto', sans-serif; */
+    margin: 0;
+    background-color: #121212;
+    color: white;
+    overflow: hidden;
+}
+.main{
+    display: flex;
+    height: 100vh;
+    padding: 0.5rem;
+}
+.sidebar{
+    background-color: black;
+    width: 350px;
+    border-radius: 1rem;
+    margin-right: 0.5rem;
+
+}
+.main-content{
+    background-color: #121212;
+    flex: 1;
+    border-radius: 1rem;
+    overflow: auto;
+    padding: 0 1.5rem 0 1.5rem;
+}
+.music-player{
+    background-color: black;
+    position: fixed;
+    bottom: 0;
+    height: 72px;
+    width: 100%;
+}
+.nav a{
+    text-decoration: none;
+}
+.nav{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 0.5rem 0.75rem;
+    height: 100px;
+    border-radius: 1rem;
+    background-color: #121212;
+    margin: 0.5rem;
+}
+.nav-options{
+    line-height: 2.5rem;
+    opacity: 0.7;
+    padding: 0.5rem 0.75rem;
+}
+.nav-options:hover{
+    opacity: 1;
+}
+.nav-options i{
+    font-size: 1.25rem;
+    
+}
+.nav-options a{
+    font-size: 1rem;
+    margin-left: 1rem;
+}
+.lib-options img{
+    height: 1.25rem;
+    width: 1.25rem;
+}
+.library{
+    background-color: #121212;
+    border-radius: 1rem;
+    margin: 0.5rem;
+    height: 100%;
+    padding: 1rem 0.75rem;;
+}
+.option{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.icons{
+    font-size: 1.25rem;
+    display: flex;
+}
+.icons i{
+    opacity: 0.7;
+    margin-right: 1em;
+}
+.lib-options a{
+    text-decoration: none;
+}
+.icons i:hover{
+    opacity: 1;
+}
+.badge{
+    border-radius: 100px;
+    background-color: white;
+    font-weight: 700;
+    padding: 0.25rem 1rem;
+    margin-top: 1rem;
+    color: black;
+    height: 2rem;
+    width: fit-content;
+}
+.box{
+    margin: 0.75rem 0 1.75rem 0;
+    padding: 0.75rem 1rem;
+    height: 8rem;
+    width: 17.4rem;
+    background-color: #232323;
+    border-radius: 0.75rem;
+}
+.box-p1{
+    font-size: 1rem;
+    font-weight: 500;
+    background-color: #232323;
+    margin-top: 0.9rem;
+}
+.box-p2{
+    font-size: 0.85rem;
+    opacity: 0.9;
+    background-color: #232323;
+    margin-top: 1rem;
+}
+
+.sticky-nav{
+    position: sticky;
+    top: 0;
+    background-color: #121212;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 0 1rem 0;
+    z-index: 10;
+}
+.sticky-nav-icons {
+    margin-left: 0.75rem;
+}
+.sticky-nav-options{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all 0.8s;
+    width: 24rem;
+    height: 5rem;
+}
+.nav-items{
+    margin-right: 1rem;
+}
+.dark-badge{
+    background-color: black;
+    color: white;
+}
+.sticky-nav-options button:hover{
+    transform: scale(1.2);
+}
+.sticky-nav-options i:hover{
+    transform: scale(1.1);
+}
+@media(max-width: 1000px){
+    .hide{
+        display: none;
+    }
+}
+
+.card{
+    background-color: #232323;
+    width: 150px;
+    border-radius: 0.5rem;
+    padding: 1rem;
+    margin-left: 1.5rem;
+    margin-top: 1rem;
+    opacity: 0.6;
+
+}
+.card:hover{
+    opacity: 1;
+}
+.cards-container{
+    display: flex;
+    margin-top: 1.68rem;
+    flex-wrap: wrap;
+}
+.card img{
+    width: 100%;
+    border-radius: 0.5rem;
+}
+.card p{
+    background-color: #232323;
+    margin-top: 0.8rem;
+    margin-bottom: 0.4rem;
+}
+.card-title{
+    font-weight: 600;
+}
+.card-info{
+    opacity: 0.8;
+    font-size: 0.75rem;
+}
+.footer{
+    height: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.line{
+    width: 90%;
+    height: 50%;
+    border-top: 1px solid white;
+    opacity: 0.4;
+}
+.music-player{
+    display: flex;
+    justify-content: space-between;
+    align-items: center; 
+    background-color: black;
+}
+.album{
+    width: 25%;
+}
+.player{
+    width: 50%;
+}
+.controls{
+    width: 25%;
+    background-color: blue;
+}
+.player-control-icon{
+    height: 1rem;
+    margin-right: 1.75rem;
+    opacity: 0.7;
+}
+.player-controls{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+
+}
+.player-control-icon:hover{
+    opacity: 1;
+}
+.playback-bar{
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.progress-bar{
+    width: 70%;
+    height: 1.75rem;
+    appearance: none;
+    background-color: transparent;
+    cursor: pointer;
+}
+.progress-bar::-webkit-slider-runnable-track{
+    background-color: #ddd;
+    border-radius: 100px;
+    height: 0.2rem;
+
+}
+.progress-bar::-webkit-slider-thumb{
+    appearance: none;
+    height: 1rem;
+    width: 1rem;
+    background-color: #1bd760;
+    border-radius: 50%;
+    margin-top: -6px;
+} 
+.album-cover img{
+    height: 3.5rem;
+    width: 3.5rem;
+    border-radius: 0.5rem;
+    background-color: black;
+    margin-top: 0.75rem;
+}
+.album{
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 1.75;
+    background-color: black;
+}
+.album-name{
+    margin-top: 0.75rem;
+    background-color: black;
+    margin-left: 0.75rem;
+}
+.album-icon{
+    margin: 2rem;
+    background-color: black;
+    opacity: 0.75;
+}
+.album-icon:hover{
+    opacity: 1;
+}
+.press-1{
+    font-size: 0.7rem;
+    opacity: 0.7;
+    margin-left: 0.65rem;
+    margin-bottom: 0.75rem;
+    background-color: black;
+}
+.press-1:hover{
+    text-decoration: underline;
+    opacity: 1;
+}
+.press{
+    font-weight: 500;
+    margin: 0.65rem;
+    background-color: black;
+}
+.controls{
+    background-color: black;
+}
+.controls-icon{
+    background-color: black;
+    display: flex;
+    justify-content: space-evenly;
+}
+.volumne-lo{
+    appearance: none;
+    background-color: transparent;
+    cursor: pointer;
+    opacity: 0.7;
+}
+.volumne-lo::-webkit-slider-runnable-track{
+    background-color: #ddd;
+    border-radius: 100px;
+    height: 0.2rem;
+
+}
+.volumne-lo::-webkit-slider-thumb{
+    appearance: none;
+    height: 1rem;
+    width: 1rem;
+    background-color: #1bd760;
+    border-radius: 50%;
+    margin-top: -6px;
+}
+.controls-icon i{
+    opacity: 0.7;
+}
+.controls-icon i:hover{
+    opacity: 1;
+}
+.volumne-lo:hover{
+    opacity: 1;
+}
